@@ -1,0 +1,119 @@
+body{
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 90px;
+    color: #fff;
+    text-shadow:  0 1px 5px #3039e0;
+  
+}
+
+#img1{
+    padding-top: 20px;
+    margin-left: 336px;
+    transform: rotateY(180deg);
+ 
+}
+
+#img2{
+    padding-top: 20px;
+    position: absolute;
+    top: 20%;
+    left: 52%;
+}
+
+#rock{
+    position: absolute;
+    left: 400px;
+    top:75%;
+    visibility: hidden;
+}
+#paper{
+    position: absolute;
+    left: 560px;
+    top:75%;
+    visibility: hidden;
+}
+#scissor{
+    position: absolute;
+    left: 720px;
+    top:75%;
+    visibility: hidden;
+}
+button {
+    height: 80px;
+    width: 140px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners for a smoother appearance */
+    margin: 10px; /* Add spacing between buttons */
+    transition: background-color 0.3s, transform 0.8s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #0057b3f7; /* Darker blue on hover for an interactive feel */
+    transform: scale(1.10); /* Slightly enlarge on hover */
+}
+
+#rock,#scissor,#paper{
+    margin-left: 90px;
+}
+#start{
+    background-color: #4caf50;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    
+}
+
+#result {
+    font-size: 36px; /* Slightly larger font size for emphasis */
+    color: #ff6347; /* Vivid tomato color for the text */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; /* Increased space between the result and buttons */
+    display: none;
+    font-family: 'Arial', sans-serif; /* Change to a common sans-serif font */
+    text-transform: uppercase; /* Uppercase text for added emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+    padding: 10px; /* Add padding for a better visual effect */
+    /* background-color: #000000;  */
+    border-radius: 10px; /* Rounded corners for the result box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a raised look */
+}
+
+
+@keyframes shakeLeft{
+    0%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+  50%{
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100%{
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+@keyframes shakeRight{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+

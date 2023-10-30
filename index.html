@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">&nbsp  ROCK &nbsp  PAPER &nbsp  SCISSOR </h1>
+    <div id="hand1">
+      <img src="rock.png"  id="img1">
+    </div>
+
+    <div id="hand2">
+        <img src="rock.png"  id="img2">
+      </div>
+
+<button type="button" onclick="game(0)" id="rock">Rock</button>
+<button type="button" onclick="game(1)" id="paper">PAPER</button>
+<button type="button" onclick="game(2)" id="scissor">SCISSOR</button>
+<button type="button" onclick="start()" id="start">START</button>
+<button type="button" onclick="restart()" id="restart" style="display: none; background-color: #0798ff;">RESTART</button>
+<p id="result"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
